@@ -16,6 +16,7 @@
 		C74BEFCC29E42AB2003CC2D1 /* TableView_UygulamasiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74BEFCB29E42AB2003CC2D1 /* TableView_UygulamasiTests.swift */; };
 		C74BEFD629E42AB2003CC2D1 /* TableView_UygulamasiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74BEFD529E42AB2003CC2D1 /* TableView_UygulamasiUITests.swift */; };
 		C74BEFD829E42AB2003CC2D1 /* TableView_UygulamasiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74BEFD729E42AB2003CC2D1 /* TableView_UygulamasiUITestsLaunchTests.swift */; };
+		C777D09429F66E6C00C7E7ED /* AciklamalarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C777D09329F66E6C00C7E7ED /* AciklamalarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C74BEFD129E42AB2003CC2D1 /* TableView UygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TableView UygulamasiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C74BEFD529E42AB2003CC2D1 /* TableView_UygulamasiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_UygulamasiUITests.swift; sourceTree = "<group>"; };
 		C74BEFD729E42AB2003CC2D1 /* TableView_UygulamasiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_UygulamasiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C777D09329F66E6C00C7E7ED /* AciklamalarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AciklamalarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				C74BEFBD29E42AB2003CC2D1 /* Assets.xcassets */,
 				C74BEFBF29E42AB2003CC2D1 /* LaunchScreen.storyboard */,
 				C74BEFC229E42AB2003CC2D1 /* Info.plist */,
+				C777D09329F66E6C00C7E7ED /* AciklamalarViewController.swift */,
 			);
 			path = "TableView Uygulamasi";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				C74BEFB929E42AB2003CC2D1 /* ViewController.swift in Sources */,
 				C74BEFB529E42AB2003CC2D1 /* AppDelegate.swift in Sources */,
 				C74BEFB729E42AB2003CC2D1 /* SceneDelegate.swift in Sources */,
+				C777D09429F66E6C00C7E7ED /* AciklamalarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
