@@ -20,6 +20,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     
     var markaAciklamalari : [String] = []
     
+    var markaAciklamasi : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,6 +32,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         //self.title = "Markalar - 1"
         //self.navigationController?.navigationBar.prefersLargeTitles = false
+        
+        self.navigationItem.largeTitleDisplayMode = .always
         
         let addButton =  UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addButtonClicked))
         addButton.tintColor = UIColor.red
@@ -52,6 +56,24 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         //UserDefaults'taki verileri siler
         //UserDefaults.standard.removeObject(forKey: "markalar")
         loadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if selectedRow == -1 {
+            return
+        }
+        if markaAciklamasi == "" {
+            markaAciklamalari.remove(at: selectedRow)
+            markalar.remove(at: selectedRow)
+        } else if markaAciklamasi == markaAciklamalari[selectedRow] {
+            return
+        } else {
+            markaAciklamalari[selectedRow] = markaAciklamasi
+        }
+        saveData()
+        table.reloadData()
     }
     
     @objc func addButtonClicked(){
@@ -188,6 +210,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         let aciklamalarView : AciklamalarViewController = segue.destination as! AciklamalarViewController
         selectedRow = table.indexPathForSelectedRow!.row
         aciklamalarView.setAciklama(a: markaAciklamalari[selectedRow])
+        aciklamalarView.masterView = self
     }
 
 
